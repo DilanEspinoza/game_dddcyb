@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: white;
+	font-size: 25px;
+}
+
+svg {
+	width: 36px;
+	height: 36px;
+	color: white;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__game__canvas {
+	position: absolute;
+	width: 800px;
+	height: 500px;
+}
+
+#btn_play {
+	background-color: blueviolet;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 20px;
+	color: white;
+	font: bold;
+}
+
+.cover {
+	position: absolute;
+	width: 800px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, 0.89);
+	backdrop-filter: invert(10px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: 998;
+	gap: 20px;
+}
+
+#game__canvas {
+	border: 1px solid black;
+	position: absolute;
+	background: url(assets/img-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+.correct__answer {
+	display: none;
+	position: absolute;
+	align-items: center;
+	right: 10px;
+	top: 10px;
+}
+
+#btn_audio_enable {
+	bottom: 10px;
+	z-index: 999;
+	right: 10px;
+	position: absolute;
+}
+
+#btn_audio_disable {
+	bottom: 10px;
+	z-index: 999;
+	right: 10px;
+	position: absolute;
+	cursor: pointer;
+	display: none;
+}
+
+#btn_menu {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	border: 1px solid white;
+	border-radius: 10px;
+	display: none;
+}
+
+.timer {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.information {
+	position: absolute;
+	bottom: 10px;
+	display: none;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+}
